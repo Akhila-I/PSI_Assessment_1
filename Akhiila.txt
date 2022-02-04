@@ -1,0 +1,186 @@
+1.
+import java.util.Scanner;
+public class A1
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int number1,number2,number3,number4;
+System.out.println("Input first number: ");
+number1=sc.nextInt();
+System.out.println("Input second number: ");
+number2=sc.nextInt();
+System.out.println("Input third number: ");
+number3=sc.nextInt();
+System.out.println("Input fourth number: ");
+number4=sc.nextInt();
+if(number1==number2&&number2==number3&&number3==number4)
+{
+System.out.println("Numbers are equal!");
+}
+else
+{
+System.out.println("Numbers are not equal!");
+}
+}
+}
+
+---------------------------------------------------------
+
+2.
+import java.util.Scanner;
+public class A2
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+double number1,number2;
+System.out.println("Input first number: ");
+number1=sc.nextDouble();
+System.out.println("Input second number: ");
+number2=sc.nextDouble();
+if(number1>0&&number1<1&&number2>0&&number2<1)
+{
+System.out.println("true");
+}
+else
+{
+System.out.println("false");
+}
+}
+}
+
+---------------------------------------------------------
+
+3.
+import java.util.Arrays;
+public class A3
+{
+public static void main(String[] args)
+{
+boolean[][] array={{true,false,true},{false,true,false}};
+for(int i=0;i<array.length;i++)
+{
+for(int j=0;j<array[i].length;j++)
+{
+if(array[i][j])
+{
+System.out.println("t ");
+}
+else
+{
+System.out.println("f ");
+}
+}
+System.out.print("\n");
+}
+}
+}
+
+---------------------------------------------------------
+
+4.
+import java.util.Arrays;
+public class A4
+{
+public static void main(String[] args)
+{
+int[][] array={{10,20,30},{40,50,60}};
+int[][] newArray=new int[array[0].length][array.length];
+System.out.println("Original Array:");
+for(int i=0;i<array.length;i++)
+{
+for(int j=0;j<array[i].length;j++)
+{
+System.out.println(array[i][j]+" " );
+}
+System.out.print("\n");
+}
+for(int i=0;i<array.length;i++)
+{
+for(int j=0;j<array[i].length;j++)
+{
+newArray[j][i]=array[i][j];
+}
+}
+System.out.println("After changing the rows and columns of the said array:);
+System.out.print("\n");
+for(int i=0;i<array.length;i++)
+{
+for(int j=0;j<array[i].length;j++)
+{
+System.out.println(newArray[i][j]+" " );
+}
+System.out.print("\n");
+}
+}
+}
+
+---------------------------------------------------------
+
+5.
+import java.util.Arrays;
+import java.util.Scanner;
+public class A5
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int[] array=new int[];
+int n,k;
+n=sc.nextInt();
+k=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+array[i]=sc.nextInt();
+}
+System.out.println("Original Array:");
+System.out.println(Arrays.toString(array);
+Arrays.sort(array);
+System.out.println(k+" largest elements of the said array are:");
+for(int i=array.length-1;i>k;i--)
+{
+System.out.println(array[i]+" ");
+}
+}
+}
+
+---------------------------------------------------------
+
+6.
+import java.util.Scanner;
+public class A6
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int number,temp,count=0;
+String binaryNumber="";
+System.out.println("Input first number: ");
+number=sc.nextInt();
+int n=number;
+while(number>0)
+{
+temp=number%2;
+if(temp==0)
+{
+count++;
+}
+binaryNumber=temp+binaryNumber;
+number=number/2;
+}
+System.out.println("Binary representation of "+n+" is: "+binaryNumber);
+System.out.println("Number of zero bits: "+count);
+}
+}
+
+---------------------------------------------------------
+
+
+
+
+
+
+
+
+
